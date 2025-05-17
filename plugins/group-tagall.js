@@ -29,7 +29,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args }) 
   const pesan = args.join` `;
   const groupMetadata = await conn.groupMetadata(m.chat);
   const groupName = groupMetadata.subject;
-  let teks = `*${groupName}*\n\nhttps://chat.whatsapp.com/LbdiPrImAbI67gaA5Dyf3j\n`;
+  let teks = `*${groupName}*\n\nhttps://chat.whatsapp.com/CCDGO1lIuH3Ggr4nA44cbY\n`;
   teks += `𝙈𝙞𝙚𝙢𝙗𝙧𝙤𝙨: *${participants.length}*\n`;
   teks += `${pesan}\n┌━━━━━━━━━━━━━━━━━━━━⭓ 𝙇𝙞𝙨𝙩𝙖\n`;
 
@@ -38,7 +38,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args }) 
     teks += `${flagOrEmoji} @${mem.id.split('@')[0]}\n`;
   }
 
-  teks += `└━━━━━━━━━━━━━━━━━━━━⭓\n\n> 𝑨𝒍𝒆𝒙𝒏𝑽𝒆𝒏𝒕𝒂T`;
+  teks += `└━━━━━━━━━━━━━━━━━━━━⭓\n\n> aleiznx`;
   await conn.sendMessage(m.chat, { 
     text: teks,
     mentions: participants.map((a) => a.id)
